@@ -1,0 +1,17 @@
+<p>Test component works!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi laborum modi expedita odit? Enim qui beatae eaque! Quia assumenda obcaecati ea adipisci corrupti dicta excepturi reprehenderit ipsam quas totam.</p>
+<!-- Interpolation here -->
+<div>
+    <h1>Welcome, {{name}}</h1>
+    <h2>{{2+2}}</h2>
+    <h2>{{"Welcome, " + name}}</h2>
+    <h2>{{name.length}}</h2>
+    <h2>{{name.toUpperCase()}}</h2>
+    <h2>{{greetUser()}}</h2>
+</div>
+<!--Binding -->
+<div>
+    <input [id]="myId" text="" value="text here">
+    <input [disabled]="isDisabled" id="{{myId}}" text="" value="text here">
+    <input bind-disabled="isDisabled" id="{{myId}}" text="" value="text here">
+</div>
